@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- Highlight.js - Tema (pode trocar por outro se quiser) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github-dark.min.css">
+
+    <!-- Highlight.js - JS principal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+
+    <!-- Inicializa o destaque de código -->
+    <script>hljs.highlightAll();</script>
+    <title>LEH</title>
+</head>
+
+<body>
+    <!-- ==================================================================================================================== -->
+
+    <div id="main-body">
+        <header>
+            <div class="logo-header">
+                <div>
+                    <a href="index.html">
+                        <img id="logo-leh" src="https://i.ibb.co/zVLtvhm7/logo-leh.png">
+                    </a>
+                </div>
+                <div>
+                    <h1 class="white-text">Aprenda Inglês Aqui</h1>
+                </div>
+            </div>
+        </header>
+        <div id="content-block">
+            <aside>
+                <iframe src="pages/scroll.html" frameborder="0"></iframe>
+            </aside>
+            <main>
+                <pre style="border-radius: 10px;
+                padding: 1rem;
+                overflow-x: auto;"><code class="language-javascript">
+function validarSenha(senha) {
+    const temLetraMaiuscula = /[A-Z]/.test(senha);
+    const temNumero = /\d/.test(senha);
+    const temSimbolo = /[\W_]/.test(senha); // Caracteres não alfanuméricos
+    const temTamanhoMinimo = senha.length >= 8;
+
+    if (!temTamanhoMinimo) {
+        return "❌ A senha deve ter pelo menos 8 caracteres.";
+    }
+
+    if (!temLetraMaiuscula) {
+        return "❌ A senha deve conter pelo menos uma letra maiúscula.";
+    }
+
+    if (!temNumero) {
+        return "❌ A senha deve conter pelo menos um número.";
+    }
+
+    if (!temSimbolo) {
+        return "❌ A senha deve conter pelo menos um símbolo (ex: !, @, #).";
+    }
+
+    return "✅ Senha válida!";
+}
+
+// Exemplos de uso:
+console.log(validarSenha("senha123"));           // ❌ falta maiúscula e símbolo
+console.log(validarSenha("Senha123"));           // ❌ falta símbolo
+console.log(validarSenha("Senha123!"));          // ✅
+console.log(validarSenha("Abc!1"));              // ❌ muito curta
+
+                    </code></pre>
+
+            </main>
+        </div>
+        <footer>
+        </footer>
+    </div>
+
+    <!-- ==================================================================================================================== -->
+</body>
+
+</html>

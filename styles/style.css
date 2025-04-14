@@ -5,20 +5,36 @@
     margin: 0;
     text-decoration: none;
     list-style: none;
+    color: #112100;
+}
+
+h1, p, li, a {
+    font-family: "Atkinson Hyperlegible Next", sans-serif;
 }
 
 header {
     width: 100%;
     height: 56.54px;
     display: flex;
-    background-color: rgb(120, 150, 74);
+    background-color: #8F9F36;
 }
 
 footer {
     width: 100%;
     height: 56.54px;
     display: flex;
-    background-color: rgb(120, 150, 74);
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    background-color: #8F9F36;
+}
+
+footer * {
+    color: white;
+}
+
+footer a {
+    color: rgb(251, 255, 198);
 }
 
 header a {
@@ -26,82 +42,118 @@ header a {
     align-self: center;
 }
 
-main {
-    width: 70%;
+p {
+    text-align: justify;
+}
+
+#main-index {
+    margin: 10px 0px 10px 0px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     height: auto;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    align-items: left;
+}
+
+iframe {
+    margin: 0px 10px 0px 0px;
+    height: 100%;
+    border-right: 2px solid #8F9F36;
+    display: flex;
+    flex-direction: column;
+}
+
+#logo-leh {
+    border-radius: 0px 500px 500px 0px;
+    width: 226.16px;
+    height: 56.54px;
+    background-color: white;
+}
+
+#toggle-aside {
+    margin-top: 12px;
+}
+
+#main-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+}
+
+#content-block {
+    width: 100%;
+    display: flex;
+    height: auto;
     flex-grow: 1;
     justify-content: flex-start;
 }
 
-iframe {
-    padding: 0 0px 0 20px;
-    margin: 10px;
-    height: 100%;
-    border-right: 2px solid black;
+.logo-header {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
 }
 
-/* ids */
+.logo-header div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-    #logo-leh {
-        border-radius: 0px 500px 500px 0px;
-        width: 226.16px;
-        height: 56.54px;
-        background-color: white;
-    }
+.button-iframe-img {
+    width: 30px;
+    height: 25px;
+}
 
-    #main-body {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        height: 100vh;
-    }
+.iframe-button-div {
+    width: 100%;
+    height: 49px;
+    box-sizing: border-box;
+    display: flex;
+    background-color: #ffffff;
+    margin: 0px;
+}
 
-    h1, p {
-        font-family: "Atkinson Hyperlegible Next", sans-serif;
-    }
+.iframe-button-div button {
+    background-color: #ffffff;
+    border-radius: 10%;
+    border: 3px solid rgba(0, 0, 0, 0.099);
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
 
-    #content-block {
-        width: 100%;
-        display: flex;
-        height: auto;
-        margin-top: 10px;
-        margin-bottom: 20px;
-        flex-grow: 1;
-        justify-content: flex-start;
-    }
+.white-text {
+    color: white;
+}
 
-/* ids */
+.main-scroll {
+    width: 100%;
+    margin-top: 0px;
+    box-sizing: border-box;
+}
 
-/* class */
+.main-scroll ul {
+    padding: 0 0px 0 20px;
+    margin-top: 20px;
+}
 
-    .logo-header {
-        display: flex;
-        justify-content: center;
-        gap: 50px;
-    }
+.aside-fechado {
+    width: 20px;
+    padding: 0;
+}
 
-    .logo-header div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+.aside-fechado iframe {
+    display: none;
+}
 
-    .button-iframe {
-        width: 20px;
-    }
-
-    .iframe-button-div {
-        display: flex;
-        justify-content: right;
-    }
-
-    .white-text {
-        color: white;
-    }
-
-/* class */
+.main-main {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: 0px 120px 0px 100px;
+}

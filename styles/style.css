@@ -5,155 +5,77 @@
     margin: 0;
     text-decoration: none;
     list-style: none;
-    color: #112100;
-}
-
-h1, p, li, a {
+    font-family: Rubik;
     font-family: "Atkinson Hyperlegible Next", sans-serif;
 }
 
-header {
-    width: 100%;
-    height: 56.54px;
-    display: flex;
-    background-color: #8F9F36;
-}
 
-footer {
-    width: 100%;
-    height: 56.54px;
-    display: flex;
-    gap: 40px;
-    justify-content: center;
-    align-items: center;
-    background-color: #8F9F36;
-}
 
-footer * {
-    color: white;
-}
+/* tags no ids or classes ================================================================================================ */
 
-footer a {
-    color: rgb(251, 255, 198);
-}
+    header {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 62.5px;
+        background-color: #88B61E;
+        color: white;
+    }
 
-header a {
-    display: flex;
-    align-self: center;
-}
+    header div {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
 
-p {
-    text-align: justify;
-}
+    footer {
+        display: flex;
+        width: 100%;
+        height: 62.5px;
+        background-color: #88B61E;
+    }
 
-#main-index {
-    margin: 10px 0px 10px 0px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    align-items: left;
-}
+    body {
+        height: 100vh;
+    }
 
-iframe {
-    margin: 0px 10px 0px 0px;
-    height: 100%;
-    border-right: 2px solid #8F9F36;
-    display: flex;
-    flex-direction: column;
-}
+    p {
+        text-align: justify;
+    }
 
-#logo-leh {
-    border-radius: 0px 500px 500px 0px;
-    width: 226.16px;
-    height: 56.54px;
-    background-color: white;
-}
+    main {
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
 
-#toggle-aside {
-    margin-top: 12px;
-}
+/* tags no ids or classes ================================================================================================ */
 
-#main-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    height: 100vh;
-}
 
-#content-block {
-    width: 100%;
-    display: flex;
-    height: auto;
-    flex-grow: 1;
-    justify-content: flex-start;
-}
 
-.logo-header {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-}
+/* ids =================================================================================================================== */
 
-.logo-header div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    #container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 
-.button-iframe-img {
-    width: 30px;
-    height: 25px;
-}
+/* ids =================================================================================================================== */
 
-.iframe-button-div {
-    width: 100%;
-    height: 49px;
-    box-sizing: border-box;
-    display: flex;
-    background-color: #ffffff;
-    margin: 0px;
-}
 
-.iframe-button-div button {
-    background-color: #ffffff;
-    border-radius: 10%;
-    border: 3px solid rgba(0, 0, 0, 0.099);
-    padding: 2px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 10px;
-}
 
-.white-text {
-    color: white;
-}
+/* classes =============================================================================================================== */
 
-.main-scroll {
-    width: 100%;
-    margin-top: 0px;
-    box-sizing: border-box;
-}
+    .logo-leh {
+        align-self: flex-start;
+        width: 270px;
+        height: 100%;
+        background-color: white;
+        border-radius: 0px 500px 500px 0px;
+    }
 
-.main-scroll ul {
-    padding: 0 0px 0 20px;
-    margin-top: 20px;
-}
-
-.aside-fechado {
-    width: 20px;
-    padding: 0;
-}
-
-.aside-fechado iframe {
-    display: none;
-}
-
-.main-main {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    margin: 0px 120px 0px 100px;
-}
+/* classes =============================================================================================================== */

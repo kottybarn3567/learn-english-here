@@ -13,42 +13,54 @@
 
 /* tags no ids or classes ================================================================================================ */
 
-    header {
-        display: flex;
-        align-items: center;
-        width: 100%;
-        height: 62.5px;
-        background-color: #88B61E;
-        color: white;
-    }
+header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 62.5px;
+    background-color: #88B61E;
+    color: white;
+}
 
-    header div {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
+header div {
+    padding-top: 12px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 
-    footer {
-        display: flex;
-        width: 100%;
-        height: 62.5px;
-        background-color: #88B61E;
-    }
+footer {
+    display: flex;
+    width: 100%;
+    height: 62.5px;
+    background-color: #88B61E;
+}
 
-    body {
-        height: 100vh;
-    }
+body {
+    height: 100vh;
+}
 
-    p {
-        text-align: justify;
-    }
+p {
+    margin: 10px 0px 10px 0px;
+    text-align: justify;
+    width: 90%;
+    line-height: 25px;
+    font-size: 17px;
+}
 
-    main {
-        padding: 30px;
-        display: flex;
-        flex-direction: column;
-        flex-grow: 1;
-    }
+main {
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    position: relative;
+}
+
+h1 {
+    width: 90%;
+    text-align: left;
+    margin-bottom: 20px;
+}
 
 /* tags no ids or classes ================================================================================================ */
 
@@ -76,6 +88,27 @@
         height: 100%;
         background-color: white;
         border-radius: 0px 500px 500px 0px;
+    }
+
+    .main-design {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-design div {
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .aside-design {
+        display: none;
     }
 
 /* classes =============================================================================================================== */

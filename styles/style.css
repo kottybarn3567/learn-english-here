@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
     padding: 0;
@@ -6,7 +6,7 @@
     text-decoration: none;
     list-style: none;
     font-family: Rubik;
-    font-family: "Atkinson Hyperlegible Next", sans-serif;
+    font-family: "Azeret Mono", monospace;
 }
 
 
@@ -18,7 +18,7 @@ header {
     align-items: center;
     width: 100%;
     height: 62.5px;
-    background-color: #88B61E;
+    background-color: #1EB64E;
     color: white;
 }
 
@@ -33,7 +33,7 @@ footer {
     display: flex;
     width: 100%;
     height: 62.5px;
-    background-color: #88B61E;
+    background-color: #1EB64E;
 }
 
 body {
@@ -56,7 +56,7 @@ main {
     position: relative;
 }
 
-h1 {
+h1, h2 {
     width: 90%;
     text-align: left;
     margin-bottom: 20px;
@@ -109,6 +109,42 @@ h1 {
 
     .aside-design {
         display: none;
+    }
+
+    .nav-body ul {
+        gap: 80px;
+        background-color: #00E048;
+        height: 60px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-body ul li {
+        border-radius: 10px 0px 0px 0px;
+        background-color: rgb(255, 255, 255);
+        padding: 6px;
+        border-bottom: 3px solid black;
+        border-right: 3px solid black;
+        transition: 0.1s ease-in-out;
+    }
+
+    .nav-body ul li:hover {
+        background-color: #2E8B4C;
+        color: white;
+        transform: translateX(-2px) translateY(-2px);
+        border-radius: 0px 0px 10px 0px;
+        border-bottom: 3px solid rgb(255, 255, 255);
+        border-right: 3px solid rgb(255, 255, 255);
+    }
+
+    .nav-body ul a {
+        color: #24362A;
+    }
+
+    .nav-body ul li:hover a {
+        color: #fbffe8;
     }
 
 /* classes =============================================================================================================== */

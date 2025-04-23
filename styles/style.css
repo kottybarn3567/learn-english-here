@@ -68,24 +68,6 @@ footer {
     align-items: center;
 }
 
-footer ul {
-    gap: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-footer div * {
-    color: #24362A;
-    display: flex;
-    justify-content: center;
-}
-
-footer div {
-    display: flex;
-    width: 100vw;
-}
-
 /* tags no ids or classes ================================================================================================ */
 
 
